@@ -1,0 +1,84 @@
+# DBLP XML Format - Recent Changes
+
+See http://dblp.org/faq/16154937 for further information.
+
+## DTD changes of August 29, 2017
+
+* Added 'aux' attribute to most data elements.
+This attribute is intended to refer to an auxiliary record which holds
+more information on this data element. Reserved for future use, no
+productive auxiliary records exist at this point.
+
+* Added 'type' attribute to most data elements.
+This attribute is intended to tag data elements with types from a
+closed vocabulary. Multiple tags can be separated by blanks.
+
+* Added 'label' attribute to most data elements.
+This attribute is intended to provide general descriptive information
+about this data element.
+
+* Removed unused data element <layout>.
+This element has never been used in the collection.
+
+## DTD changes of March 29, 2017
+
+* Added 'type' attribute to `<ee>` elements.
+This attribute is intended to store additional information on the
+provided URLs, such as 'oa' for open access resources.
+ 
+## DTD changes of October 01, 2016
+ 
+* Added `<person>` child element to the document root. 
+Reserved for future use. This element is intended as a replacement for
+the current author profile records stored in legacy `<www>` tags.
+ 
+* Added `<data>` child element to the document root. 
+Reserved for future use. This element is intended as a record for
+citeable data publications, such as research data sets or artifacts.
+ 
+* Added `<publnr>` child element to all publication record elements
+(i.e., `<inproceedings>`, `<article>`, etc). 
+This element is intended hold the article numbers/IDs of publications,
+if applicable. This number is currently coded with the pagination
+information of the `<page>` element.
+ 
+* Added 'orcid' attribute (implied) to elements `<author>` and `<editor>`. 
+This attribute is intended to hold the ORCIDs of the respective
+authors/editors of the given publication.
+ 
+* Added 'aux' attribute (implied) to elements `<editor>`, `<ee>`,
+`<note>`, and `<url>` (already defined and in use for `<author>`). 
+This attribute is intended to hold a key fragment referencing to
+auxiliary records yielding additional information. Reserved for future
+use, no productive auxiliary records exist at this point.
+ 
+* Added 'mdate' attribute (implied) to the document root. 
+This attribute is intended to store the date on which the
+XML dump file was created.
+ 
+* Added 'cdate' attribute (implied) to all child elements of the
+document root. 
+This attribute is intended to store the date the record has been
+created, i.e., the date the publication has been added to dblp. 
+Reserved for future use. Currently, only the modification date of the
+record is provided in the 'mdate' attribute.
+ 
+* Added 'label' attribute (implied) to element `<note>`. 
+This attribute is intended to hold descriptive data on the
+`<note>` element.
+ 
+* Added 'type' attribute (implied) to element `<page>`. 
+This attribute is intended to hold the type of the pagination
+information, i.e., if the pagination is continuous of just
+provides a page range.
+ 
+## DTD changes of March 01, 2016
+ 
+* Added 'aux' attribute (implied) to element `<author>`. 
+This attribute is intended to hold a key fragment referencing to
+auxiliary records yielding additional information. Reserved for future
+use, no productive auxiliary records exist at this point.
+ 
+* Added 'ref' attribute (implied) to element `<cite>`. 
+This attribute is intended to hold a dblp key to explicitly
+reference a publication in dblp.
