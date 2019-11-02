@@ -75,10 +75,6 @@ create table author (
     constraint author_pk primary key (person_id,publication_key)
 );
 
--- create index author_person_id on author (person_id asc);
---
--- create index author_publication_key on author (publication_key asc);
-
 -- table: cite
 create table cite (
     id serial  not null,
@@ -88,8 +84,6 @@ create table cite (
     constraint cite_pk primary key (id)
 );
 
--- create index cite_publication_key on cite (publication_key asc);
-
 -- table: crossref
 create table crossref (
     id serial  not null,
@@ -98,18 +92,12 @@ create table crossref (
     constraint crossref_pk primary key (id)
 );
 
--- create index crossref_publication_key on crossref (publication_key asc);
-
 -- table: editor
 create table editor (
     person_id int  not null,
     publication_key char(60)  not null,
     constraint editor_pk primary key (person_id,publication_key)
 );
-
--- create index editor_person_id on editor (person_id asc);
---
--- create index editor_publication_key on editor (publication_key asc);
 
 -- table: electronic_edition
 create table electronic_edition (
@@ -121,8 +109,6 @@ create table electronic_edition (
     constraint electronic_edition_pk primary key (id)
 );
 
--- create index electronic_edition_publication_key on electronic_edition (publication_key asc);
-
 -- table: isbn
 create table isbn (
     id serial  not null,
@@ -131,10 +117,6 @@ create table isbn (
     type isbn_type_enum  null,
     constraint isbn_pk primary key (id)
 );
-
--- create unique index isbn_type_per_publication on isbn (type asc,publication_key asc);
---
--- create index isbn_isbn on isbn (isbn asc);
 
 -- table: note
 create table note (
@@ -146,8 +128,6 @@ create table note (
     constraint note_pk primary key (id)
 );
 
--- create index note_publication_key on note (publication_key asc);
-
 -- table: person
 create table person (
     id serial  not null,
@@ -155,11 +135,6 @@ create table person (
     orcid char(19)  null,
     constraint person_pk primary key (id)
 );
-
--- create unique index person_name_orcid on person (full_name asc,orcid asc);
---
--- create unique index person_name on person (full_name asc)
---     where orcid is null;
 
 -- table: publication
 create table publication (
@@ -187,12 +162,6 @@ create table publication (
     constraint publication_pk primary key (key)
 );
 
--- create index publication_school_id on publication (school_id asc);
---
--- create index publication_publisher_id on publication (publisher_id asc);
---
--- create index publication_series_id on publication (series_id asc);
-
 -- table: publisher
 create table publisher (
     id serial  not null,
@@ -201,16 +170,12 @@ create table publisher (
     constraint publisher_pk primary key (id)
 );
 
--- create unique index publisher_name on publisher (name asc);
-
 -- table: school
 create table school (
     id serial  not null,
     name varchar(120)  not null,
     constraint school_pk primary key (id)
 );
-
--- create unique index school_name on school (name asc);
 
 -- table: series
 create table series (
@@ -220,8 +185,6 @@ create table series (
     constraint series_pk primary key (id)
 );
 
--- create unique index series_name on series (name asc);
-
 -- table: url
 create table url (
     id serial  not null,
@@ -230,5 +193,3 @@ create table url (
     publication_key char(60)  not null,
     constraint url_pk primary key (id)
 );
-
--- end of file.

@@ -38,7 +38,7 @@ def parse_data(node: Element, current_key: str) -> str:
     :return: initialized data model
     """
     tag_class = DATA_TAGNAMES[node.tagName]
-    tag_attrs = {str(k).replace("type", "type__"): v for k, v in node.attributes.items()}
+    tag_attrs = {str(k).replace("type", "type_"): v for k, v in node.attributes.items()}
     if node.tagName in TAG_CONTENT_TO_DATA_ATTR_MAPPING.keys():
         tag_content_attr = TAG_CONTENT_TO_DATA_ATTR_MAPPING[node.tagName]
         tag_content = get_node_text(node)

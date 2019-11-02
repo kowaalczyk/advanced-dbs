@@ -1,8 +1,16 @@
+all: parse-all load-all post-load
+
+parse-all:
+	tmux new-session -d -s "zbd-people" python3 04/xml_to_csv.py people data/dblp.xml
+	tmux new-session -d -s "zbd-publications" python3 04/xml_to_csv.py publications data/dblp.xml
+	tmux new-session -d -s "zbd-generic" python3 04/xml_to_csv.py generic data/dblp.xml
+
 init:
-	psql -h lkdb zbd -f 02/init.sql
+	psql -h lkdb zbd < 04/init.sql
 
-reinstall:
-	pip install -e .
+load-all: init
+	./04/load.sh
 
-upload-full: reinstall
-	python 02/load_data.py data/dblp.xml
+
+post-load:
+	psql -h lkdb zbd < 04/post-load.sql

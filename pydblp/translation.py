@@ -104,7 +104,7 @@ TAG_TO_ATTR_MAPPING = {
 }
 
 ATTR_TO_ATTR_MAPPING = {
-    'publtype': get_default_mapper('type__'),
+    'publtype': get_default_mapper('type'),
     **{a: get_default_mapper(a) for a in {'cdate', 'mdate'}}
     # key is stored separately to easily pass to dependent models
 }
@@ -113,8 +113,8 @@ TAG_CONTENT_TO_DATA_ATTR_MAPPING = {
     'publisher': 'name',
     'school': 'name',
     'series': 'name',
-    'cite': 'str__',
-    'crossref': 'str__',
+    'cite': 'str',
+    'crossref': 'str',
     'ee': 'url',
     'isbn': 'isbn',
     'url': 'url',
