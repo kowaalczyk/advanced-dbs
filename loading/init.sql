@@ -69,33 +69,33 @@ create type note_type_enum as enum (
 -- table: author
 create table author (
     person_id int  not null,
-    publication_key char(60)  not null,
-    bibtex varchar(60)  null,
-    aux varchar(20)  null,
+    publication_key varchar(80)  not null,
+    bibtex text  null,
+    aux text  null,
     constraint author_pk primary key (person_id,publication_key)
 );
 
 -- table: cite
 create table cite (
     id serial  not null,
-    str varchar(120)  not null,
-    publication_key char(60)  not null,
-    label varchar(10)  null,
+    str text  not null,
+    publication_key varchar(80)  not null,
+    label text  null,
     constraint cite_pk primary key (id)
 );
 
 -- table: crossref
 create table crossref (
     id serial  not null,
-    str varchar(60)  not null,
-    publication_key char(60)  not null,
+    str text  not null,
+    publication_key varchar(80)  not null,
     constraint crossref_pk primary key (id)
 );
 
 -- table: editor
 create table editor (
     person_id int  not null,
-    publication_key char(60)  not null,
+    publication_key varchar(80)  not null,
     constraint editor_pk primary key (person_id,publication_key)
 );
 
@@ -103,7 +103,7 @@ create table editor (
 create table electronic_edition (
     id serial  not null,
     url text  not null,
-    publication_key char(60)  not null,
+    publication_key varchar(80)  not null,
     is_archive boolean  not null default false,
     is_oa boolean  not null default false,
     constraint electronic_edition_pk primary key (id)
@@ -113,7 +113,7 @@ create table electronic_edition (
 create table isbn (
     id serial  not null,
     isbn char(18)  not null,
-    publication_key char(60)  not null,
+    publication_key varchar(80)  not null,
     type isbn_type_enum  null,
     constraint isbn_pk primary key (id)
 );
@@ -122,34 +122,34 @@ create table isbn (
 create table note (
     id serial  not null,
     note text  not null,
-    label varchar(40)  null,
+    label text  null,
     type note_type_enum  null,
-    publication_key char(60)  not null,
+    publication_key varchar(80)  not null,
     constraint note_pk primary key (id)
 );
 
 -- table: person
 create table person (
     id serial  not null,
-    full_name varchar(120)  not null,
+    full_name text  not null,
     orcid char(19)  null,
     constraint person_pk primary key (id)
 );
 
 -- table: publication
 create table publication (
-    key char(60)  not null,
+    key varchar(80)  not null,
     category publication_category_enum  not null,
-    title text  not null,
+    title text  null,
     year smallint  null,
     booktitle text  null,
-    pages int4range  null,
-    address varchar(60)  null,
-    journal varchar(60)  null,
+    pages text  null,
+    address text  null,
+    journal text  null,
     volume smallint  null,
-    number varchar(30)  null,
+    number text  null,
     month month_enum  null,
-    cdrom varchar(60)  null,
+    cdrom text  null,
     chapter smallint  null,
     publnr smallint  null,
     cdate date  null,
@@ -165,22 +165,22 @@ create table publication (
 -- table: publisher
 create table publisher (
     id serial  not null,
-    name varchar(120)  not null,
-    href varchar(60)  null,
+    name text  not null,
+    href text  null,
     constraint publisher_pk primary key (id)
 );
 
 -- table: school
 create table school (
     id serial  not null,
-    name varchar(120)  not null,
+    name text  not null,
     constraint school_pk primary key (id)
 );
 
 -- table: series
 create table series (
     id serial  not null,
-    name varchar(120)  not null,
+    name text  not null,
     href text  null,
     constraint series_pk primary key (id)
 );
@@ -190,6 +190,6 @@ create table url (
     id serial  not null,
     url text  not null,
     type url_type_enum  null,
-    publication_key char(60)  not null,
+    publication_key varchar(80)  not null,
     constraint url_pk primary key (id)
 );

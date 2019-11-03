@@ -11,7 +11,7 @@ create index editor_publication_key on editor (publication_key asc);
 
 create index electronic_edition_publication_key on electronic_edition (publication_key asc);
 
-create unique index isbn_type_per_publication on isbn (type asc,publication_key asc);
+create index isbn_type_per_publication on isbn (type asc,publication_key asc);
 create index isbn_isbn on isbn (isbn asc);
 
 create index note_publication_key on note (publication_key asc);

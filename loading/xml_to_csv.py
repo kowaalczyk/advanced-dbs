@@ -3,6 +3,7 @@ import gc
 import logging
 import os
 import sys
+import re
 import time
 import typing as T
 from multiprocessing import cpu_count, Pool
@@ -14,9 +15,7 @@ from xml.sax.handler import feature_external_ges
 import pandas as pd
 from tqdm import tqdm
 
-
 log = logging.getLogger(__name__)
-
 
 """ XML Tagnames related to the various Publication categories """
 PUBLICATION_TAGNAMES = {
@@ -37,6 +36,7 @@ DEFAULT_MAPPING_TAGS = {
     'journal',
     'number',
     'title',
+    'pages',  # you really don't want to validate page intervals
 }
 
 """ Set of XML tags that should use integer mapper """
@@ -53,6 +53,7 @@ def get_default_mapper(s: str) -> T.Callable:
     :param s: attribute name
     :return: function mapping value of attribute to { attribute: value } dict
     """
+
     def mapper(val: str) -> T.Dict[str, str]:
         return {s: val}
 
@@ -65,9 +66,10 @@ def get_int_mapper(s: str) -> T.Callable:
     :param s: attribute name
     :return: function mapping value of attribute to { attribute: int(value) } dict
     """
+
     def mapper(val: str) -> T.Dict[str, T.Optional[int]]:
         try:
-            mapped =  {s: int(val)}
+            mapped = {s: int(val)}
         except ValueError:
             mapped = {s: None}
         return mapped
@@ -75,22 +77,25 @@ def get_int_mapper(s: str) -> T.Callable:
     return mapper
 
 
-def page_mapper(val: str) -> T.Dict[str, T.Optional[str]]:
-    try:
-        separated = val.split("-")
-        if len(separated) == 1:
-            page = separated[0]
-            return {'pages': f"[{int(page)},{int(page)}]"}
-        else:
-            return {'pages': f"[{int(separated[0])},{int(separated[1])}]"}
-    except ValueError:
-        # for now, we drop values that are not stored as integer or integer range
-        return {'pages': None}
+# def page_mapper(val: str) -> T.Dict[str, T.Optional[str]]:
+#     try:
+#         separated = val.split("-")
+#         if len(separated) == 1:
+#             page = separated[0]
+#             return {'pages': f"[{int(page)},{int(page)}]"}
+#         else:
+#             left = min(int(separated[0]), int(separated[1]))
+#             right = max(int(separated[0]), int(separated[1]))
+#             return {'pages': f"[{left},{right}]"}
+#     except ValueError:
+#         # for now, we drop values that are not stored as integer or integer range
+#         log.warning(f"Ignoring invalid page range or value: '{val}'")
+#         return {'pages': None}
 
 
 """ Mapping XML tags to DB attributes """
 TAG_TO_ATTR_MAPPING = {
-    'pages': page_mapper,
+    # 'pages': page_mapper,
     **{k: get_default_mapper(k) for k in DEFAULT_MAPPING_TAGS},
     **{k: get_int_mapper(k) for k in INT_MAPPING_TAGS}
 }
@@ -121,7 +126,8 @@ def get_node_text(node: Element) -> str:
     :param node:
     :return: node text
     """
-    return node.toxml().replace(f"<{node.tagName}>", "").replace(f"</{node.tagName}>", "")
+    xml_tag_regex = "</{0,1}" + node.tagName + '[\w\d =\-_"]*>'
+    return re.sub(xml_tag_regex, "", node.toxml())
 
 
 class TagParser(object):
@@ -211,8 +217,8 @@ class TagParser(object):
             elif event == pulldom.END_ELEMENT and node.tagName in PUBLICATION_TAGNAMES:
                 self._conclude_publication()
                 # TODO: Remove this after finished debugging
-                if self.n_parsed_publications > 10**4:
-                    break
+                # if self.n_parsed_publications > 10**4:
+                #     break
         if self.pbar:
             self.t.close()
         return self._post_call()
@@ -241,7 +247,6 @@ class PersonTagParser(TagParser):
     _author_dfs = list()
     _editor_dfs = list()
     _person_dfs = list()
-    # person_df = pd.DataFrame(columns=['full_name', 'orcid'])
 
     def _handle_filtered_tag(self, event, node: Element):
         person_attrs, realtion_attrs = parse_person_dependency(node)
@@ -307,7 +312,6 @@ def get_data_parsing_class(tag_name: str, attr_for_inner_text: T.Optional[str] =
                 if k in INT_MAPPING_TAGS:
                     tag_attrs[k] = int(v)
                 elif tag_name == "ee" and k == "type":
-                    # special handling for ee.type:
                     tag_attrs["is_archive"] = 'archive' in v
                     tag_attrs["is_oa"] = 'oa' in v
                     del tag_attrs[k]
@@ -363,8 +367,8 @@ class PublicationParser(TagParser):
             elif event == pulldom.END_ELEMENT and node.tagName in PUBLICATION_TAGNAMES:
                 self._conclude_publication()
                 # TODO: Remove this after finished debugging
-                if self.n_parsed_publications > 10 ** 4:
-                    break
+                # if self.n_parsed_publications > 10 ** 4:
+                #     break
 
         if self.pbar:
             self.t.close()
@@ -431,6 +435,8 @@ class PublicationParser(TagParser):
 
 def save_df(df: pd.DataFrame, file_name: str, **kwargs):
     start_time = time.time()
+    # some relations (author, editor) contain duplicate rows - we drop them as soon as possible to reduce file size
+    df.drop_duplicates(inplace=True)
     # escape char same as quote char, as specified in postgres documentation
     df.to_csv(file_name, quoting=csv.QUOTE_NONNUMERIC, escapechar='"', **kwargs)
     end_time = time.time()
@@ -446,7 +452,7 @@ def parse_generic_item(generic_data_tuple_with_filename) -> str:
 
     tagname, attrname, tablename, filename = generic_data_tuple_with_filename
     parser_builder = get_data_parsing_class(tagname, attrname)
-    parser = parser_builder(filename, use_pbar=False)
+    parser = parser_builder(filename, use_pbar=True)  # todo: remove debug
     df = parser()
     if df is not None:
         save_df(df, f"{tablename}.csv", index=True, index_label='id')
@@ -497,7 +503,7 @@ def load_dblp(target: str, filename: str) -> None:
                 log.info(t)
 
     end = time.time()
-    log.info(f"Completed job {target} in {end-start:.2f}")
+    log.info(f"Completed job {target} in {end - start:.2f}")
     gc.collect()
 
 
