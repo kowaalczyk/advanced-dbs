@@ -1,6 +1,6 @@
 # Advanced DBs
 
-Building an optimal relational database systems for all data from [dblp.org](https://dblp.org).
+Building an optimal relational database system for all data from [dblp.org](https://dblp.org).
 
 Given its complexity, I feel like it can be a nice example of how to work with large datasets, in particular:
 
