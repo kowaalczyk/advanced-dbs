@@ -40,7 +40,6 @@ def parse_file(path: str, expected_lines: int) -> dict:
 
         current_top_key = None
         root_tag = root.tag
-        current_parent_key = root_tag  # TODO: Actually use a stack?
         for event, element in tqdm(context, total=expected_lines):
             if event == "start":
                 current_parent_key = element.tag
@@ -52,7 +51,7 @@ def parse_file(path: str, expected_lines: int) -> dict:
 
                 elif current_parent_key == root_tag:
                     raise Exception(
-                        f"Invalid toplevel key at: parent_key={current_parent_key}, after_n_toplevel_elements={n_toplevel_elements}"
+                        f"Invalid toplevel key at: parent_key={current_parent_key}, after_n_toplevel_elements={actual_n_toplevel_elements}"
                     )
 
             else:  # end
@@ -72,8 +71,6 @@ def parse_file(path: str, expected_lines: int) -> dict:
     print(f"Parsing stats: expected_lines={expected_lines}, actual_toplevel_elements={actual_n_toplevel_elements}")
     for key in toplevel_keys:
         print(f"{key}: {frequency_per_top_key[key]['freq']} ==> {frequency_per_top_key[key]['keys_freq']}")
-
-    # TODO: More detailed stats
 
 
 if __name__ == "__main__":

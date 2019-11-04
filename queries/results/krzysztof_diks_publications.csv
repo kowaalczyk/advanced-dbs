@@ -1,0 +1,208 @@
+#,full_name,key,title,booktitle,journal,pages,year
+1,Krzysztof Diks,homepages/d/KDiks,Home Page,,,,
+2,Bogdan S. Chlebus,conf/ftcs/ChlebusDP91,Optimal Broadcasting in Faulty Hypercubes.,FTCS,,"[266,273]",1991
+3,Krzysztof Diks,conf/ftcs/ChlebusDP91,Optimal Broadcasting in Faulty Hypercubes.,FTCS,,"[266,273]",1991
+4,Andrzej Pelc,conf/ftcs/ChlebusDP91,Optimal Broadcasting in Faulty Hypercubes.,FTCS,,"[266,273]",1991
+5,Krzysztof Diks,conf/sofsem/DiksS10,Perfect Matching for Biconnected Cubic Graphs in <i>O</i>(<i>n</i> log<sup>2</sup><i>n</i>) Time.,SOFSEM,,"[321,333]",2010
+6,Piotr Stanczyk,conf/sofsem/DiksS10,Perfect Matching for Biconnected Cubic Graphs in <i>O</i>(<i>n</i> log<sup>2</sup><i>n</i>) Time.,SOFSEM,,"[321,333]",2010
+7,Krzysztof Diks,conf/paa/Diks87,Parallel Recognition of Outerplanar Graphs.,Parallel Algorithms and Architectures,,"[105,113]",1987
+8,Krzysztof Diks,conf/issep/DiksM08,From Top Coders to Top IT Professionals.,ISSEP,,"[31,40]",2008
+9,Jan Madey,conf/issep/DiksM08,From Top Coders to Top IT Professionals.,ISSEP,,"[31,40]",2008
+10,Bogdan S. Chlebus,conf/mfcs/ChlebusDHR88,Efficient Simulations Between Concurrent-Read Concurrent-Write PRAM Models.,MFCS,,"[231,239]",1988
+11,Krzysztof Diks,conf/mfcs/ChlebusDHR88,Efficient Simulations Between Concurrent-Read Concurrent-Write PRAM Models.,MFCS,,"[231,239]",1988
+12,Torben Hagerup,conf/mfcs/ChlebusDHR88,Efficient Simulations Between Concurrent-Read Concurrent-Write PRAM Models.,MFCS,,"[231,239]",1988
+13,Tomasz Radzik,conf/mfcs/ChlebusDHR88,Efficient Simulations Between Concurrent-Read Concurrent-Write PRAM Models.,MFCS,,"[231,239]",1988
+14,Krzysztof Diks,conf/mfcs/DiksHR89,Optimal Parallel Algorithms For The Recognition And Colouring Outerplanar Graphs (Extended Abstract).,MFCS,,"[207,217]",1989
+15,Torben Hagerup,conf/mfcs/DiksHR89,Optimal Parallel Algorithms For The Recognition And Colouring Outerplanar Graphs (Extended Abstract).,MFCS,,"[207,217]",1989
+16,Wojciech Rytter,conf/mfcs/DiksHR89,Optimal Parallel Algorithms For The Recognition And Colouring Outerplanar Graphs (Extended Abstract).,MFCS,,"[207,217]",1989
+17,Piotr Denejko,conf/mfcs/DenejkoDPP94,Reliable Minimum Finding Comparator Networks.,MFCS,,"[306,315]",1994
+18,Krzysztof Diks,conf/mfcs/DenejkoDPP94,Reliable Minimum Finding Comparator Networks.,MFCS,,"[306,315]",1994
+19,Andrzej Pelc,conf/mfcs/DenejkoDPP94,Reliable Minimum Finding Comparator Networks.,MFCS,,"[306,315]",1994
+20,Marek Piotrów,conf/mfcs/DenejkoDPP94,Reliable Minimum Finding Comparator Networks.,MFCS,,"[306,315]",1994
+21,Krzysztof Diks,conf/mfcs/DiksDSV88,Edge Separators for Planar Graphs and Their Applications.,MFCS,,"[280,290]",1988
+22,Hristo Djidjev,conf/mfcs/DiksDSV88,Edge Separators for Planar Graphs and Their Applications.,MFCS,,"[280,290]",1988
+23,Ondrej Sýkora,conf/mfcs/DiksDSV88,Edge Separators for Planar Graphs and Their Applications.,MFCS,,"[280,290]",1988
+24,Imrich Vrto,conf/mfcs/DiksDSV88,Edge Separators for Planar Graphs and Their Applications.,MFCS,,"[280,290]",1988
+25,Krzysztof Diks,conf/mfcs/Diks86,A Fast Parallel Algorithm for Six-Colouring of Planar Graphs (Extended Abstract).,MFCS,,"[273,282]",1986
+26,Bogdan S. Chlebus,conf/mfcs/ChlebusDR88,Testing Isomorphism of Outerplanar Graphs in Parallel.,MFCS,,"[220,230]",1988
+27,Krzysztof Diks,conf/mfcs/ChlebusDR88,Testing Isomorphism of Outerplanar Graphs in Parallel.,MFCS,,"[220,230]",1988
+28,Tomasz Radzik,conf/mfcs/ChlebusDR88,Testing Isomorphism of Outerplanar Graphs in Parallel.,MFCS,,"[220,230]",1988
+29,Bogdan S. Chlebus,conf/mfcs/ChlebusDRS89,Parallel Complexity of Lexicographically First Order Problems for Tree-Structured Graphs (Extended Abstract).,MFCS,,"[185,195]",1989
+30,Krzysztof Diks,conf/mfcs/ChlebusDRS89,Parallel Complexity of Lexicographically First Order Problems for Tree-Structured Graphs (Extended Abstract).,MFCS,,"[185,195]",1989
+31,Wojciech Rytter,conf/mfcs/ChlebusDRS89,Parallel Complexity of Lexicographically First Order Problems for Tree-Structured Graphs (Extended Abstract).,MFCS,,"[185,195]",1989
+32,Tomasz Szymacha,conf/mfcs/ChlebusDRS89,Parallel Complexity of Lexicographically First Order Problems for Tree-Structured Graphs (Extended Abstract).,MFCS,,"[185,195]",1989
+33,Krzysztof Diks,conf/cfcp/DiksP94,Fault-Tolerant Linear Broadcasting.,Canada-France Conference on Parallel and Distributed Computing,,"[207,217]",1994
+34,Andrzej Pelc,conf/cfcp/DiksP94,Fault-Tolerant Linear Broadcasting.,Canada-France Conference on Parallel and Distributed Computing,,"[207,217]",1994
+35,Krzysztof Diks,conf/oa/DiksR89,Optimal Parallel Computations for Halin Graphs.,Optimal Algorithms,,"[266,273]",1989
+36,Wojciech Rytter,conf/oa/DiksR89,Optimal Parallel Computations for Halin Graphs.,Optimal Algorithms,,"[266,273]",1989
+37,Jurek Czyzowicz,conf/sirocco/CzyzowiczDMR18,Broadcast with Energy-Exchanging Mobile Agents Distributed on a Tree.,SIROCCO,,"[209,225]",2018
+38,Krzysztof Diks,conf/sirocco/CzyzowiczDMR18,Broadcast with Energy-Exchanging Mobile Agents Distributed on a Tree.,SIROCCO,,"[209,225]",2018
+39,Jean Moussi,conf/sirocco/CzyzowiczDMR18,Broadcast with Energy-Exchanging Mobile Agents Distributed on a Tree.,SIROCCO,,"[209,225]",2018
+40,Wojciech Rytter,conf/sirocco/CzyzowiczDMR18,Broadcast with Energy-Exchanging Mobile Agents Distributed on a Tree.,SIROCCO,,"[209,225]",2018
+41,Krzysztof Diks,conf/sirocco/DiksLP97,An Optimal Algorithm for Broadcasting Multiple Messages in Trees.,SIROCCO,,"[69,80]",1997
+42,Andrzej Lingas,conf/sirocco/DiksLP97,An Optimal Algorithm for Broadcasting Multiple Messages in Trees.,SIROCCO,,"[69,80]",1997
+43,Andrzej Pelc,conf/sirocco/DiksLP97,An Optimal Algorithm for Broadcasting Multiple Messages in Trees.,SIROCCO,,"[69,80]",1997
+44,Jurek Czyzowicz,conf/sirocco/CzyzowiczDMR16,Communication Problems for Mobile Agents Exchanging Energy.,SIROCCO,,"[275,288]",2016
+45,Krzysztof Diks,conf/sirocco/CzyzowiczDMR16,Communication Problems for Mobile Agents Exchanging Energy.,SIROCCO,,"[275,288]",2016
+46,Jean Moussi,conf/sirocco/CzyzowiczDMR16,Communication Problems for Mobile Agents Exchanging Energy.,SIROCCO,,"[275,288]",2016
+47,Wojciech Rytter,conf/sirocco/CzyzowiczDMR16,Communication Problems for Mobile Agents Exchanging Energy.,SIROCCO,,"[275,288]",2016
+48,Krzysztof Diks,conf/sirocco/DiksKMP94,The Buffer Potential of a Network.,SIROCCO,,"[149,150]",1994
+49,Evangelos Kranakis,conf/sirocco/DiksKMP94,The Buffer Potential of a Network.,SIROCCO,,"[149,150]",1994
+50,A. Malinowsky,conf/sirocco/DiksKMP94,The Buffer Potential of a Network.,SIROCCO,,"[149,150]",1994
+51,Andrzej Pelc,conf/sirocco/DiksKMP94,The Buffer Potential of a Network.,SIROCCO,,"[149,150]",1994
+52,Krzysztof Diks,conf/esa/DiksKKP99,The Impact of Knowledge on Broadcasting Time in Radio Networks.,ESA,,"[41,52]",1999
+53,<author orcid=0000-0002-8959-4428>Evangelos Kranakis,conf/esa/DiksKKP99,The Impact of Knowledge on Broadcasting Time in Radio Networks.,ESA,,"[41,52]",1999
+54,Danny Krizanc,conf/esa/DiksKKP99,The Impact of Knowledge on Broadcasting Time in Radio Networks.,ESA,,"[41,52]",1999
+55,Andrzej Pelc,conf/esa/DiksKKP99,The Impact of Knowledge on Broadcasting Time in Radio Networks.,ESA,,"[41,52]",1999
+56,Krzysztof Diks,conf/esa/DiksP97,Optimal Adaptive Broadcasting with a Bounded Fraction of Faulty Nodes (Extended Abstract).,ESA,,"[118,129]",1997
+57,Andrzej Pelc,conf/esa/DiksP97,Optimal Adaptive Broadcasting with a Bounded Fraction of Faulty Nodes (Extended Abstract).,ESA,,"[118,129]",1997
+58,Krzysztof Diks,conf/esa/DiksS07,Dynamic Plane Transitive Closure.,ESA,,"[594,604]",2007
+59,Piotr Sankowski,conf/esa/DiksS07,Dynamic Plane Transitive Closure.,ESA,,"[594,604]",2007
+60,Krzysztof Diks,conf/isa/DiksGL91,Parallel Algorithms for Finding Maximal k-Dependent Sets and Maximal f-Matchings.,ISA,,"[385,395]",1991
+61,Oscar Garrido,conf/isa/DiksGL91,Parallel Algorithms for Finding Maximal k-Dependent Sets and Maximal f-Matchings.,ISA,,"[385,395]",1991
+62,Andrzej Lingas,conf/isa/DiksGL91,Parallel Algorithms for Finding Maximal k-Dependent Sets and Maximal f-Matchings.,ISA,,"[385,395]",1991
+63,Krzysztof Diks,conf/soda/DiksFKP02,Tree exploration with little memory.,SODA,,"[588,597]",2002
+64,Pierre Fraigniaud,conf/soda/DiksFKP02,Tree exploration with little memory.,SODA,,"[588,597]",2002
+65,Evangelos Kranakis,conf/soda/DiksFKP02,Tree exploration with little memory.,SODA,,"[588,597]",2002
+66,Andrzej Pelc,conf/soda/DiksFKP02,Tree exploration with little memory.,SODA,,"[588,597]",2002
+67,Krzysztof Diks,conf/wg/DiksP96,System Diagnosis with Smallest Risk of Error.,WG,,"[141,150]",1996
+68,Andrzej Pelc,conf/wg/DiksP96,System Diagnosis with Smallest Risk of Error.,WG,,"[141,150]",1996
+69,Krzysztof Diks,conf/wg/DiksH96,More General Parallel Tree Contraction: Register Allocation and Broadcasting in a Tree.,WG,,"[126,140]",1996
+70,Torben Hagerup,conf/wg/DiksH96,More General Parallel Tree Contraction: Register Allocation and Broadcasting in a Tree.,WG,,"[126,140]",1996
+71,Krzysztof Diks,conf/wg/DiksKK02,A New 3-Color Criterion for Planar Graphs.,WG,,"[138,149]",2002
+72,Lukasz Kowalik,conf/wg/DiksKK02,A New 3-Color Criterion for Planar Graphs.,WG,,"[138,149]",2002
+73,Maciej Kurowski,conf/wg/DiksKK02,A New 3-Color Criterion for Planar Graphs.,WG,,"[138,149]",2002
+74,Jerzy Czyzowicz,conf/algosensors/CzyzowiczDMR17,Energy-Optimal Broadcast in a Tree with Mobile Agents.,ALGOSENSORS,,"[98,113]",2017
+75,Krzysztof Diks,conf/algosensors/CzyzowiczDMR17,Energy-Optimal Broadcast in a Tree with Mobile Agents.,ALGOSENSORS,,"[98,113]",2017
+76,Jean Moussi,conf/algosensors/CzyzowiczDMR17,Energy-Optimal Broadcast in a Tree with Mobile Agents.,ALGOSENSORS,,"[98,113]",2017
+77,Wojciech Rytter,conf/algosensors/CzyzowiczDMR17,Energy-Optimal Broadcast in a Tree with Mobile Agents.,ALGOSENSORS,,"[98,113]",2017
+78,Bogdan S. Chlebus,conf/fct/ChlebusDHR89,New Simulations between CRCW PRAMs.,FCT,,"[95,104]",1989
+79,Krzysztof Diks,conf/fct/ChlebusDHR89,New Simulations between CRCW PRAMs.,FCT,,"[95,104]",1989
+80,Torben Hagerup,conf/fct/ChlebusDHR89,New Simulations between CRCW PRAMs.,FCT,,"[95,104]",1989
+81,Tomasz Radzik,conf/fct/ChlebusDHR89,New Simulations between CRCW PRAMs.,FCT,,"[95,104]",1989
+82,Bogdan S. Chlebus,conf/fct/ChlebusCD87,Saturating Flows in Networks.,FCT,,"[82,91]",1987
+83,Marek Chrobak,conf/fct/ChlebusCD87,Saturating Flows in Networks.,FCT,,"[82,91]",1987
+84,Krzysztof Diks,conf/fct/ChlebusCD87,Saturating Flows in Networks.,FCT,,"[82,91]",1987
+85,Bogdan S. Chlebus,conf/hicss/ChlebusDP94,Waking up an Anonymous Faulty Network from a Single Source.,HICSS (2),,"[187,193]",1994
+86,Krzysztof Diks,conf/hicss/ChlebusDP94,Waking up an Anonymous Faulty Network from a Single Source.,HICSS (2),,"[187,193]",1994
+87,Andrzej Pelc,conf/hicss/ChlebusDP94,Waking up an Anonymous Faulty Network from a Single Source.,HICSS (2),,"[187,193]",1994
+88,Krzysztof Diks,conf/hicss/DiksP95,Broadcasting with universal lists.,HICSS (2),,"[564,573]",1995
+89,Andrzej Pelc,conf/hicss/DiksP95,Broadcasting with universal lists.,HICSS (2),,"[564,573]",1995
+90,Krzysztof Diks,conf/sct/Diks84,A note on selection networks.,Symposium on Computation Theory,,"[54,57]",1984
+91,Torben Hagerup,conf/icalp/HagerupCD87,Parallel 5-Colouring of Planar Graphs.,ICALP,,"[304,313]",1987
+92,Marek Chrobak,conf/icalp/HagerupCD87,Parallel 5-Colouring of Planar Graphs.,ICALP,,"[304,313]",1987
+93,Krzysztof Diks,conf/icalp/HagerupCD87,Parallel 5-Colouring of Planar Graphs.,ICALP,,"[304,313]",1987
+94,Bogdan S. Chlebus,conf/icalp/ChlebusDP93,Sparse Networks Supporting Efficient Reliable Broadcasting.,ICALP,,"[388,397]",1993
+95,Krzysztof Diks,conf/icalp/ChlebusDP93,Sparse Networks Supporting Efficient Reliable Broadcasting.,ICALP,,"[388,397]",1993
+96,Andrzej Pelc,conf/icalp/ChlebusDP93,Sparse Networks Supporting Efficient Reliable Broadcasting.,ICALP,,"[388,397]",1993
+97,Piotr Berman,journals/jal/BermanDP97,Reliable Broadcasting in Logarithmic Time with Byzantine Link Failures.,,J. Algorithms,"[199,211]",1997
+98,Krzysztof Diks,journals/jal/BermanDP97,Reliable Broadcasting in Logarithmic Time with Byzantine Link Failures.,,J. Algorithms,"[199,211]",1997
+99,Andrzej Pelc,journals/jal/BermanDP97,Reliable Broadcasting in Logarithmic Time with Byzantine Link Failures.,,J. Algorithms,"[199,211]",1997
+100,Krzysztof Diks,journals/jal/DiksFKP04,Tree exploration with little memory.,,J. Algorithms,"[38,63]",2004
+101,Pierre Fraigniaud,journals/jal/DiksFKP04,Tree exploration with little memory.,,J. Algorithms,"[38,63]",2004
+102,<author orcid=0000-0002-8959-4428>Evangelos Kranakis,journals/jal/DiksFKP04,Tree exploration with little memory.,,J. Algorithms,"[38,63]",2004
+103,Andrzej Pelc,journals/jal/DiksFKP04,Tree exploration with little memory.,,J. Algorithms,"[38,63]",2004
+104,Krzysztof Diks,journals/jal/DiksDSV93,Edge Separators of Planar and Outerplanar Graphs with Applications.,,J. Algorithms,"[258,279]",1993
+105,Hristo Djidjev,journals/jal/DiksDSV93,Edge Separators of Planar and Outerplanar Graphs with Applications.,,J. Algorithms,"[258,279]",1993
+106,Ondrej Sýkora,journals/jal/DiksDSV93,Edge Separators of Planar and Outerplanar Graphs with Applications.,,J. Algorithms,"[258,279]",1993
+107,Imrich Vrto,journals/jal/DiksDSV93,Edge Separators of Planar and Outerplanar Graphs with Applications.,,J. Algorithms,"[258,279]",1993
+108,Krzysztof Diks,journals/jpdc/DiksLP99,An Optimal Algorithm for Broadcasting Multiple Messages in Trees.,,J. Parallel Distrib. Comput.,"[465,474]",1999
+109,Andrzej Lingas,journals/jpdc/DiksLP99,An Optimal Algorithm for Broadcasting Multiple Messages in Trees.,,J. Parallel Distrib. Comput.,"[465,474]",1999
+110,Andrzej Pelc,journals/jpdc/DiksLP99,An Optimal Algorithm for Broadcasting Multiple Messages in Trees.,,J. Parallel Distrib. Comput.,"[465,474]",1999
+111,Krzysztof Diks,journals/join/DiksDP06,Exploring Planar Graphs Using Unoriented Maps.,,Journal of Interconnection Networks,"[353,373]",2006
+112,Stefan Dobrev,journals/join/DiksDP06,Exploring Planar Graphs Using Unoriented Maps.,,Journal of Interconnection Networks,"[353,373]",2006
+113,Andrzej Pelc,journals/join/DiksDP06,Exploring Planar Graphs Using Unoriented Maps.,,Journal of Interconnection Networks,"[353,373]",2006
+114,Torben Hagerup,journals/siamcomp/HagerupCD89,Optimal Parallel 5-Colouring of Planar Graphs.,,SIAM J. Comput.,"[288,300]",1989
+115,Marek Chrobak,journals/siamcomp/HagerupCD89,Optimal Parallel 5-Colouring of Planar Graphs.,,SIAM J. Comput.,"[288,300]",1989
+116,Krzysztof Diks,journals/siamcomp/HagerupCD89,Optimal Parallel 5-Colouring of Planar Graphs.,,SIAM J. Comput.,"[288,300]",1989
+117,Bogdan S. Chlebus,journals/cpc/ChlebusDP96,Reliable Broadcasting in Hypercubes with Random Link and Node Failures.,,"Combinatorics, Probability &amp; Computing","[337,350]",1996
+118,Krzysztof Diks,journals/cpc/ChlebusDP96,Reliable Broadcasting in Hypercubes with Random Link and Node Failures.,,"Combinatorics, Probability &amp; Computing","[337,350]",1996
+119,Andrzej Pelc,journals/cpc/ChlebusDP96,Reliable Broadcasting in Hypercubes with Random Link and Node Failures.,,"Combinatorics, Probability &amp; Computing","[337,350]",1996
+120,Krzysztof Diks,journals/ita/DiksMP95,Token Transfer in a Faulty Network.,,ITA,"[383,400]",1995
+121,Adam Malinowski,journals/ita/DiksMP95,Token Transfer in a Faulty Network.,,ITA,"[383,400]",1995
+122,Andrzej Pelc,journals/ita/DiksMP95,Token Transfer in a Faulty Network.,,ITA,"[383,400]",1995
+123,Krzysztof Diks,journals/ita/DiksP93,Fast Diagnosis of Multiprocessor Systems with Random Faults.,,ITA,"[391,401]",1993
+124,Andrzej Pelc,journals/ita/DiksP93,Fast Diagnosis of Multiprocessor Systems with Random Faults.,,ITA,"[391,401]",1993
+125,Krzysztof Diks,journals/ppl/DiksKP98,Broadcasting in Unlabeled Tori.,,Parallel Processing Letters,"[177,188]",1998
+126,Evangelos Kranakis,journals/ppl/DiksKP98,Broadcasting in Unlabeled Tori.,,Parallel Processing Letters,"[177,188]",1998
+127,Andrzej Pelc,journals/ppl/DiksKP98,Broadcasting in Unlabeled Tori.,,Parallel Processing Letters,"[177,188]",1998
+128,Krzysztof Diks,journals/ppl/DiksMP94,Reliable Token Despersal with Random Faults.,,Parallel Processing Letters,"[417,427]",1994
+129,Adam Malinowski,journals/ppl/DiksMP94,Reliable Token Despersal with Random Faults.,,Parallel Processing Letters,"[417,427]",1994
+130,Andrzej Pelc,journals/ppl/DiksMP94,Reliable Token Despersal with Random Faults.,,Parallel Processing Letters,"[417,427]",1994
+131,Krzysztof Diks,journals/ipl/DiksKKMP94,Optimal Coteries and Voting Schemes.,,Inf. Process. Lett.,"[1,6]",1994
+132,<author orcid=0000-0002-8959-4428>Evangelos Kranakis,journals/ipl/DiksKKMP94,Optimal Coteries and Voting Schemes.,,Inf. Process. Lett.,"[1,6]",1994
+133,Danny Krizanc,journals/ipl/DiksKKMP94,Optimal Coteries and Voting Schemes.,,Inf. Process. Lett.,"[1,6]",1994
+134,<author orcid=0000-0001-7897-2043>Bernard Mans,journals/ipl/DiksKKMP94,Optimal Coteries and Voting Schemes.,,Inf. Process. Lett.,"[1,6]",1994
+135,Andrzej Pelc,journals/ipl/DiksKKMP94,Optimal Coteries and Voting Schemes.,,Inf. Process. Lett.,"[1,6]",1994
+136,Krzysztof Diks,journals/ipl/DiksDKPR98,Broadcasting in Unlabeled Hypercubes with a Linear Number of Messages.,,Inf. Process. Lett.,"[181,186]",1998
+137,Stefan Dobrev,journals/ipl/DiksDKPR98,Broadcasting in Unlabeled Hypercubes with a Linear Number of Messages.,,Inf. Process. Lett.,"[181,186]",1998
+138,Evangelos Kranakis,journals/ipl/DiksDKPR98,Broadcasting in Unlabeled Hypercubes with a Linear Number of Messages.,,Inf. Process. Lett.,"[181,186]",1998
+139,Andrzej Pelc,journals/ipl/DiksDKPR98,Broadcasting in Unlabeled Hypercubes with a Linear Number of Messages.,,Inf. Process. Lett.,"[181,186]",1998
+140,Peter Ruzicka,journals/ipl/DiksDKPR98,Broadcasting in Unlabeled Hypercubes with a Linear Number of Messages.,,Inf. Process. Lett.,"[181,186]",1998
+141,Artur Czumaj,journals/ipl/CzumajDP96,Parallel Maximum Independent Set in Convex Bipartite Graphs.,,Inf. Process. Lett.,"[289,294]",1996
+142,Krzysztof Diks,journals/ipl/CzumajDP96,Parallel Maximum Independent Set in Convex Bipartite Graphs.,,Inf. Process. Lett.,"[289,294]",1996
+143,Teresa M. Przytycka,journals/ipl/CzumajDP96,Parallel Maximum Independent Set in Convex Bipartite Graphs.,,Inf. Process. Lett.,"[289,294]",1996
+144,Krzysztof Diks,journals/tcs/DiksR91,On Optimal Parallel Computations for Sequences of Brackets.,,Theor. Comput. Sci.,"[251,262]",1991
+145,Wojciech Rytter,journals/tcs/DiksR91,On Optimal Parallel Computations for Sequences of Brackets.,,Theor. Comput. Sci.,"[251,262]",1991
+146,Krzysztof Diks,journals/tcs/DiksKMP95,Anonymous Wireless Rings.,,Theor. Comput. Sci.,"[95,109]",1995
+147,<author orcid=0000-0002-8959-4428>Evangelos Kranakis,journals/tcs/DiksKMP95,Anonymous Wireless Rings.,,Theor. Comput. Sci.,"[95,109]",1995
+148,Adam Malinowski,journals/tcs/DiksKMP95,Anonymous Wireless Rings.,,Theor. Comput. Sci.,"[95,109]",1995
+149,Andrzej Pelc,journals/tcs/DiksKMP95,Anonymous Wireless Rings.,,Theor. Comput. Sci.,"[95,109]",1995
+150,Krzysztof Diks,journals/tcs/DiksH98,More General Parallel Tree Contraction: Register Allocation and Broadcasting in a Tree.,,Theor. Comput. Sci.,"[3,29]",1998
+151,Torben Hagerup,journals/tcs/DiksH98,More General Parallel Tree Contraction: Register Allocation and Broadcasting in a Tree.,,Theor. Comput. Sci.,"[3,29]",1998
+152,Krzysztof Diks,journals/tcs/Diks85,Embeddings of Binary Trees in Lines.,,Theor. Comput. Sci.,"[319,331]",1985
+153,Krzysztof Diks,journals/tcs/DiksP98,System Diagnosis with Smallest Risk of Error.,,Theor. Comput. Sci.,"[163,173]",1998
+154,Andrzej Pelc,journals/tcs/DiksP98,System Diagnosis with Smallest Risk of Error.,,Theor. Comput. Sci.,"[163,173]",1998
+155,Krzysztof Diks,journals/tcs/DiksKKP02,The impact of information on broadcasting time in linear radio networks.,,Theor. Comput. Sci.,"[449,471]",2002
+156,<author orcid=0000-0002-8959-4428>Evangelos Kranakis,journals/tcs/DiksKKP02,The impact of information on broadcasting time in linear radio networks.,,Theor. Comput. Sci.,"[449,471]",2002
+157,Danny Krizanc,journals/tcs/DiksKKP02,The impact of information on broadcasting time in linear radio networks.,,Theor. Comput. Sci.,"[449,471]",2002
+158,Andrzej Pelc,journals/tcs/DiksKKP02,The impact of information on broadcasting time in linear radio networks.,,Theor. Comput. Sci.,"[449,471]",2002
+159,Krzysztof Diks,journals/tcs/DiksP96,Reliable Computations on Faulty EREW PRAM.,,Theor. Comput. Sci.,"[107,122]",1996
+160,Andrzej Pelc,journals/tcs/DiksP96,Reliable Computations on Faulty EREW PRAM.,,Theor. Comput. Sci.,"[107,122]",1996
+161,P. C. P. Bhatt,journals/iandc/BhattDHPRS91,Improved Deterministic Parallel Integer Sorting,,Inf. Comput.,"[29,47]",1991
+162,Krzysztof Diks,journals/iandc/BhattDHPRS91,Improved Deterministic Parallel Integer Sorting,,Inf. Comput.,"[29,47]",1991
+163,Torben Hagerup,journals/iandc/BhattDHPRS91,Improved Deterministic Parallel Integer Sorting,,Inf. Comput.,"[29,47]",1991
+164,V. C. Prasad,journals/iandc/BhattDHPRS91,Improved Deterministic Parallel Integer Sorting,,Inf. Comput.,"[29,47]",1991
+165,Tomasz Radzik,journals/iandc/BhattDHPRS91,Improved Deterministic Parallel Integer Sorting,,Inf. Comput.,"[29,47]",1991
+166,Sanjeev Saxena,journals/iandc/BhattDHPRS91,Improved Deterministic Parallel Integer Sorting,,Inf. Comput.,"[29,47]",1991
+167,Krzysztof Diks,journals/networks/DiksP96,Broadcasting with universal lists.,,Networks,"[183,196]",1996
+168,Andrzej Pelc,journals/networks/DiksP96,Broadcasting with universal lists.,,Networks,"[183,196]",1996
+169,Bogdan S. Chlebus,journals/algorithmica/ChlebusDK95,O(log log n)-Time Integer Geometry on the CRCW PRAM.,,Algorithmica,"[52,69]",1995
+170,Krzysztof Diks,journals/algorithmica/ChlebusDK95,O(log log n)-Time Integer Geometry on the CRCW PRAM.,,Algorithmica,"[52,69]",1995
+171,Miroslaw Kowaluk,journals/algorithmica/ChlebusDK95,O(log log n)-Time Integer Geometry on the CRCW PRAM.,,Algorithmica,"[52,69]",1995
+172,Krzysztof Diks,journals/algorithmica/DiksP00,Optimal Adaptive Broadcasting with a Bounded Fraction of Faulty Nodes.,,Algorithmica,"[37,50]",2000
+173,Andrzej Pelc,journals/algorithmica/DiksP00,Optimal Adaptive Broadcasting with a Bounded Fraction of Faulty Nodes.,,Algorithmica,"[37,50]",2000
+174,Krzysztof Diks,journals/njc/DiksP96,Fault-Tolerant Linear Broadcasting.,,Nord. J. Comput.,"[188,201]",1996
+175,Andrzej Pelc,journals/njc/DiksP96,Fault-Tolerant Linear Broadcasting.,,Nord. J. Comput.,"[188,201]",1996
+176,Bogdan S. Chlebus,journals/njc/ChlebusDP94,Sparse Networks Supporting Efficient Reliable Broadcasting.,,Nord. J. Comput.,"[332,345]",1994
+177,Krzysztof Diks,journals/njc/ChlebusDP94,Sparse Networks Supporting Efficient Reliable Broadcasting.,,Nord. J. Comput.,"[332,345]",1994
+178,Andrzej Pelc,journals/njc/ChlebusDP94,Sparse Networks Supporting Efficient Reliable Broadcasting.,,Nord. J. Comput.,"[332,345]",1994
+179,Krzysztof Diks,journals/tc/DiksP97,Globally Optimal Diagnosis in Systems with Random Faults.,,IEEE Trans. Computers,"[200,204]",1997
+180,Andrzej Pelc,journals/tc/DiksP97,Globally Optimal Diagnosis in Systems with Random Faults.,,IEEE Trans. Computers,"[200,204]",1997
+181,Jerzy Czyzowicz,journals/corr/CzyzowiczDMR15,Algorithms for Communication Problems for Mobile Agents Exchanging Energy.,,CoRR,,2015
+182,Krzysztof Diks,journals/corr/CzyzowiczDMR15,Algorithms for Communication Problems for Mobile Agents Exchanging Energy.,,CoRR,,2015
+183,Jean Moussi,journals/corr/CzyzowiczDMR15,Algorithms for Communication Problems for Mobile Agents Exchanging Energy.,,CoRR,,2015
+184,Wojciech Rytter,journals/corr/CzyzowiczDMR15,Algorithms for Communication Problems for Mobile Agents Exchanging Energy.,,CoRR,,2015
+185,Piotr Denejko,journals/fuin/DenejkoDPP00,Reliable Minimum Finding Comparator Networks.,,Fundam. Inform.,"[235,249]",2000
+186,Krzysztof Diks,journals/fuin/DenejkoDPP00,Reliable Minimum Finding Comparator Networks.,,Fundam. Inform.,"[235,249]",2000
+187,Andrzej Pelc,journals/fuin/DenejkoDPP00,Reliable Minimum Finding Comparator Networks.,,Fundam. Inform.,"[235,249]",2000
+188,Marek Piotrów,journals/fuin/DenejkoDPP00,Reliable Minimum Finding Comparator Networks.,,Fundam. Inform.,"[235,249]",2000
+189,Bogdan S. Chlebus,journals/fuin/ChlebusDP97,Transition-Optimal Token Distribution.,,Fundam. Inform.,"[313,328]",1997
+190,Krzysztof Diks,journals/fuin/ChlebusDP97,Transition-Optimal Token Distribution.,,Fundam. Inform.,"[313,328]",1997
+191,Andrzej Pelc,journals/fuin/ChlebusDP97,Transition-Optimal Token Distribution.,,Fundam. Inform.,"[313,328]",1997
+192,Krzysztof Diks,journals/siamdm/DiksP92,Almost Safe Gossiping in Bounded Degree Networks.,,SIAM J. Discrete Math.,"[338,344]",1992
+193,Andrzej Pelc,journals/siamdm/DiksP92,Almost Safe Gossiping in Bounded Degree Networks.,,SIAM J. Discrete Math.,"[338,344]",1992
+194,Krzysztof Diks,journals/siamdm/DiksP96,Efficient Gossiping by Packets in Networks with Random Faults.,,SIAM J. Discrete Math.,"[7,18]",1996
+195,Andrzej Pelc,journals/siamdm/DiksP96,Efficient Gossiping by Packets in Networks with Random Faults.,,SIAM J. Discrete Math.,"[7,18]",1996
+196,Bogdan S. Chlebus,journals/siamdm/ChlebusDP94,Sorting on a Mesh-Connected Computer with Delaying Links.,,SIAM J. Discrete Math.,"[119,132]",1994
+197,Krzysztof Diks,journals/siamdm/ChlebusDP94,Sorting on a Mesh-Connected Computer with Delaying Links.,,SIAM J. Discrete Math.,"[119,132]",1994
+198,Andrzej Pelc,journals/siamdm/ChlebusDP94,Sorting on a Mesh-Connected Computer with Delaying Links.,,SIAM J. Discrete Math.,"[119,132]",1994
+199,Krzysztof Diks,journals/dam/DiksKP98,Perfect Broadcasting in Unlabeled Networks.,,Discrete Applied Mathematics,"[33,47]",1998
+200,<author orcid=0000-0002-8959-4428>Evangelos Kranakis,journals/dam/DiksKP98,Perfect Broadcasting in Unlabeled Networks.,,Discrete Applied Mathematics,"[33,47]",1998
+201,Andrzej Pelc,journals/dam/DiksKP98,Perfect Broadcasting in Unlabeled Networks.,,Discrete Applied Mathematics,"[33,47]",1998
+202,Bogdan S. Chlebus,journals/dam/ChlebusDP94,Fast gossiping with short unreliable messages.,,Discrete Applied Mathematics,"[15,24]",1994
+203,Krzysztof Diks,journals/dam/ChlebusDP94,Fast gossiping with short unreliable messages.,,Discrete Applied Mathematics,"[15,24]",1994
+204,Andrzej Pelc,journals/dam/ChlebusDP94,Fast gossiping with short unreliable messages.,,Discrete Applied Mathematics,"[15,24]",1994
+205,Krzysztof Diks,journals/ijfcs/DiksGL93,Parallel Algorithms for Finding Maximal k-Dependent Sets and Maximal f-Matchings.,,Int. J. Found. Comput. Sci.,"[179,192]",1993
+206,Oscar Garrido,journals/ijfcs/DiksGL93,Parallel Algorithms for Finding Maximal k-Dependent Sets and Maximal f-Matchings.,,Int. J. Found. Comput. Sci.,"[179,192]",1993
+207,Andrzej Lingas,journals/ijfcs/DiksGL93,Parallel Algorithms for Finding Maximal k-Dependent Sets and Maximal f-Matchings.,,Int. J. Found. Comput. Sci.,"[179,192]",1993

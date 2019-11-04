@@ -518,7 +518,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 2:
         filename = sys.argv[2]
     else:
-        filename = "../data/dblp.xml"
+        filename = "data/dblp.xml"
         log.warning(f"Using default filename: {filename}")
 
     # noinspection PyUnboundLocalVariable

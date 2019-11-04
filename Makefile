@@ -1,7 +1,16 @@
 conninfo := "postgres://postgres:postgres@localhost:5432/zbd"
-#export conninfo := "postgres://kk385830:x@lkdb/zbd"
 
-all: parse-all init load-all post-load
+db-up:
+	docker run --name postgres -d -p 5432:5432 postgres:9-alpine
+
+db-create:
+	psql -d $(conninfo) -c "create database zbd"
+
+db-down:
+	docker stop postgres
+
+db-logs:
+	docker logs postgres
 
 parse-all:
 	tmux new-session -d -s "zbd-people" python3 loading/xml_to_csv.py people data/dblp.xml
@@ -17,3 +26,6 @@ load-all:
 
 post-load:
 	psql -d $(conninfo) < loading/post-load.sql
+
+benchmark:
+	python queries/benchmark.py $(conninfo) queries/results/authors_100_top_100_rand.csv

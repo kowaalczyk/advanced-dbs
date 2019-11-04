@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
             authors = pd.read_sql(authors_query, con=engine, columns=['full_name', 'count_publications'])
 
-            authors_filename = 'results/authors.csv'
+            authors_filename = 'queries/results/authors.csv'
             authors.to_csv(authors_filename)
             print(f"Authors saved to {authors_filename}")
 
@@ -108,6 +108,6 @@ if __name__ == '__main__':
     all_experiments_result_df = pd.concat(
         result_dfs, axis='index'
     )
-    out_filename = f'results/benchmark_{N_EXPERIMENTS}.csv'
+    out_filename = f'queries/results/benchmark_{N_EXPERIMENTS}.csv'
     all_experiments_result_df.to_csv(out_filename, index=True, index_label='experiment_name')
     print(f"Results saved to: {out_filename}")

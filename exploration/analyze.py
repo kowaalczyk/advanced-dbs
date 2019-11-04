@@ -21,7 +21,7 @@ url_types = set()
 isbn_types = set()
 
 
-def analyze_document(filename: str = "../data/dblp.xml", expected_event_count: T.Optional[int] = 248393285):
+def analyze_document(filename: str = "data/dblp.xml", expected_event_count: T.Optional[int] = 248393285):
     """
     New function for dblp xml analysis used to correct my database schema.
     :param filename:

@@ -1,3 +1,4 @@
+click
 tqdm
 pandas
 psycopg2
