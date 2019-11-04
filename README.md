@@ -2,9 +2,6 @@
 
 Building an optimal relational database systems for all data from [dblp.org](https://dblp.org).
 
-The project is a result of assignments from Advanced Database Systems class, part of MSc in Computer Science
-course at University of Warsaw.
-
 Given its complexity, I feel like it can be a nice example of how to work with large datasets, in particular:
 
 -   creating a relational schema for messy XML data
@@ -12,7 +9,8 @@ Given its complexity, I feel like it can be a nice example of how to work with l
 -   optimizing query performance
 -   reliably benchmarking query execution times
 
-All of the code, except raw data from DBLP and its description are my own work.
+The project is a result of assignments from Advanced Database Systems class, part of MSc in Computer Science
+course at University of Warsaw. All of the code, except raw data from DBLP and its description are my own work.
 
 
 ## Working with the project
