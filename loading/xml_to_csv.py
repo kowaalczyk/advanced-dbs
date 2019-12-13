@@ -517,6 +517,10 @@ if __name__ == '__main__':
 
     if len(sys.argv) > 2:
         filename = sys.argv[2]
+        log.info(f"Using filename: {filename}")
+        if len(sys.argv) > 3:
+            log.info(f"Using non-standard expected event count: {expected_event_count}")
+            expected_event_count = int(sys.argv[3])
     else:
         filename = "data/dblp.xml"
         log.warning(f"Using default filename: {filename}")

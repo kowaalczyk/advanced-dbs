@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  postgres:
+    image: "postgres:9-alpine"
+    ports:
+      - "5432:5432"
+    volumes:
+      - "postgres:/var/lib/postgresql/dat"
+    networks:
+      - shared
+  neo4j:
+    environment:
+      - "NEO4J_AUTH=none"
+    build: "./graph"
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - "neo4j:/data"
+      - "minio:/minio"
+    networks:
+      - shared
+  minio:
+    image: "minio/minio:latest"
+    command: "server /data"
+    environment:
+      - "MINIO_ACCESS_KEY=AKIAIOSFODNN7EXAMPLE"
+      - "MINIO_SECRET_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+    ports:
+      - "9000:9000"
+    volumes:
+      - "minio:/data"
+    networks:
+      - shared
+
+volumes:
+  postgres:
+  neo4j:
+  minio:
+
+networks:
+  shared:

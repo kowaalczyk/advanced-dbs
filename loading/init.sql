@@ -165,7 +165,7 @@ create table publication (
 -- table: publisher
 create table publisher (
     id serial  not null,
-    name text  not null,
+    name text  null,
     href text  null,
     constraint publisher_pk primary key (id)
 );

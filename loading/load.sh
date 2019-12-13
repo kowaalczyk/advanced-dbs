@@ -2,8 +2,8 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-data_dir="data"
-conninfo="$1"
+data_dir="$1"
+conninfo="$2"
 
 tables_to_insert="author cite crossref editor electronic_edition isbn note person publication publisher school series url"
 

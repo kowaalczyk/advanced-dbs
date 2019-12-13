@@ -1,3 +1,6 @@
 .idea
 *.egg-info
 *.tar.gz
+data
+data-backup
+data-sample

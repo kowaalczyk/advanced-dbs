@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-data_dir="data"
+data_dir="$1"
 
 gnu_sed=$(sed --version 2>/dev/null || true)
 if [[ -z "$gnu_sed" ]]; then
