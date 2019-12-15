@@ -1,0 +1,78 @@
+Importing the contents of these files into /data/databases/graph.db:
+Nodes:
+  :Cite
+  /var/lib/neo4j/./import/cite.csv.header
+  /var/lib/neo4j/./import/cite.csv
+
+  :Publisher
+  /var/lib/neo4j/./import/publisher.csv.header
+  /var/lib/neo4j/./import/publisher.csv
+
+  :Url
+  /var/lib/neo4j/./import/url.csv.header
+  /var/lib/neo4j/./import/url.csv
+
+  :Crossref
+  /var/lib/neo4j/./import/crossref.csv.header
+  /var/lib/neo4j/./import/crossref.csv
+
+  :Isbn
+  /var/lib/neo4j/./import/isbn.csv.header
+  /var/lib/neo4j/./import/isbn.csv
+
+  :Electronic_edition
+  /var/lib/neo4j/./import/electronic_edition.csv.header
+  /var/lib/neo4j/./import/electronic_edition.csv
+
+  :Publication
+  /var/lib/neo4j/./import/publication.csv.header
+  /var/lib/neo4j/./import/publication.csv
+
+  :Person
+  /var/lib/neo4j/./import/person.csv.header
+  /var/lib/neo4j/./import/person.csv
+
+  :Series
+  /var/lib/neo4j/./import/series.csv.header
+  /var/lib/neo4j/./import/series.csv
+
+  :School
+  /var/lib/neo4j/./import/school.csv.header
+  /var/lib/neo4j/./import/school.csv
+
+  :Note
+  /var/lib/neo4j/./import/note.csv.header
+  /var/lib/neo4j/./import/note.csv
+Relationships:
+  :authored
+  /var/lib/neo4j/./import/author.csv.header
+  /var/lib/neo4j/./import/author.csv
+
+  :edited
+  /var/lib/neo4j/./import/editor.csv.header
+  /var/lib/neo4j/./import/editor.csv
+
+Available resources:
+  Total machine memory: 3.85 GB
+  Free machine memory: 114.08 MB
+  Max heap memory : 878.50 MB
+  Processors: 4
+  Configured max memory: 2.70 GB
+  High-IO: false
+
+WARNING: 308.32 MB memory may not be sufficient to complete this import. Suggested memory distribution is:
+heap size: 1.00 GB
+minimum free and available memory excluding heap size: 1.21 GBImport starting 2019-12-14 13:13:21.004+0000
+  Estimated number of nodes: 17.09 M
+  Estimated number of node properties: 72.13 M
+  Estimated number of relationships: 16.78 M
+  Estimated number of relationship properties: 30.29 k
+  Estimated disk space usage: 4.07 GB
+  Estimated required memory usage: 1.21 GB
+
+IMPORT DONE in 1m 51s 119ms.
+Imported:
+  17804375 nodes
+  16854197 relationships
+  76057647 properties
+Peak memory usage: 1.20 GB

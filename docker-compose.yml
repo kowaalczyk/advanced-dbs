@@ -19,6 +19,7 @@ services:
     volumes:
       - "neo4j:/data"
       - "minio:/minio"
+      - "./graph/conf:/conf"
     networks:
       - shared
   minio:

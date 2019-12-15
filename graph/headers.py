@@ -6,8 +6,7 @@ import sys
 
 type_map = {
     "id": "id:ID({}-ID)",
-    "key": "key:string",  # All IDs have to be same type, so publication key will be indexed later
-    "person_id": "person_id:int",
+    "key": "key:ID({}-ID)",
     "school_id": "school_id:int",
     "publisher_id": "publisher_id:int",
     "series_id": "series_id:int",
@@ -20,8 +19,19 @@ type_map = {
     "publnr": "publnr:short",
     "cdate": "cdate:date",
     "mdate": "mdate:date",
+    # TODO: translate type_enums and month to points in graph
 }
-# TODO: translate type_enums and month to points in graph
+rel_type_map = {
+    "person_id": ":START_ID(person-ID)",
+    "publication_key": ":END_ID(publication-ID)",
+}
+
+
+def map_colname(entity, colname):
+    if (entity == 'author' or entity == 'editor') and (colname in set(rel_type_map.keys())):
+        return rel_type_map[colname]
+    else:
+        return type_map.get(colname, colname).format(entity)
 
 
 def create_headers_csv(file_path):
@@ -30,7 +40,7 @@ def create_headers_csv(file_path):
         reader = csv.reader(f)
         colnames = next(reader)
     colnames_fmt = ", ".join(
-        [type_map.get(colname, colname).format(path.name.replace(".csv", "")) for colname in colnames]
+        [map_colname(path.name.replace(".csv", ""), colname) for colname in colnames]
     )
     header_path = path.with_name(f"{path.name}.header")
     with header_path.open("w") as f:
@@ -44,15 +54,18 @@ def build_load_command(csvs):
     directly above neo4j import directory (datadir)
     """
 
-    cmd = """
-#!/bin/bash
+    cmd = """#!/bin/bash
 set -euo pipefail
-IFS=$'\n\t'
-neo4j-admin import --id-type INTEGER \
-    """
+IFS=$'\\n\\t'
+neo4j-admin import --id-type STRING \\\n"""
     for csv in csvs:
-        entity_name = csv.replace('csv', '').capitalize()
-        cmd += f'--nodes:{entity_name} "./import/{csv}.header,./import/{csv}" \\\n'
+        entity_name = csv.replace('.csv', '').capitalize()
+        if entity_name == 'Author':
+            cmd += f'--relationships:authored "./import/{csv}.header,./import/{csv}" \\\n'
+        elif entity_name == 'Editor':
+            cmd += f'--relationships:edited "./import/{csv}.header,./import/{csv}" \\\n'
+        else:
+            cmd += f'--nodes:{entity_name} "./import/{csv}.header,./import/{csv}" \\\n'
     return cmd
 
 
