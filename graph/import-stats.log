@@ -1,3 +1,22 @@
+➜ docker-compose run neo4j bash /graph/load.sh data
+Creating volume "zbd_neo4j" with default driver
+copying headers...
+processing author.csv (561M     /minio/data/author.csv)...
+processing cite.csv (9.0M       /minio/data/cite.csv)...
+processing crossref.csv (122M   /minio/data/crossref.csv)...
+processing editor.csv (2.7M     /minio/data/editor.csv)...
+processing electronic_edition.csv (1.3M /minio/data/electronic_edition.csv)...
+processing isbn.csv (2.9M       /minio/data/isbn.csv)...
+processing note.csv (12M        /minio/data/note.csv)...
+processing person.csv (76M      /minio/data/person.csv)...
+processing publication.csv (945M        /minio/data/publication.csv)...
+processing publisher.csv (72K   /minio/data/publisher.csv)...
+processing school.csv (84K      /minio/data/school.csv)...
+processing series.csv (84K      /minio/data/series.csv)...
+processing url.csv (361M        /minio/data/url.csv)...
+csvs and headers processed
+loading...
+Neo4j version: 3.5.13
 Importing the contents of these files into /data/databases/graph.db:
 Nodes:
   :Cite
@@ -53,16 +72,14 @@ Relationships:
   /var/lib/neo4j/./import/editor.csv
 
 Available resources:
-  Total machine memory: 3.85 GB
-  Free machine memory: 114.08 MB
-  Max heap memory : 878.50 MB
+  Total machine memory: 7.79 GB
+  Free machine memory: 2.77 GB
+  Max heap memory : 14.22 GB
   Processors: 4
-  Configured max memory: 2.70 GB
+  Configured max memory: -6219616666.00 B
   High-IO: false
 
-WARNING: 308.32 MB memory may not be sufficient to complete this import. Suggested memory distribution is:
-heap size: 1.00 GB
-minimum free and available memory excluding heap size: 1.21 GBImport starting 2019-12-14 13:13:21.004+0000
+Import starting 2019-12-30 11:28:40.176+0000
   Estimated number of nodes: 17.09 M
   Estimated number of node properties: 72.13 M
   Estimated number of relationships: 16.78 M
@@ -70,9 +87,30 @@ minimum free and available memory excluding heap size: 1.21 GBImport starting 20
   Estimated disk space usage: 4.07 GB
   Estimated required memory usage: 1.21 GB
 
-IMPORT DONE in 1m 51s 119ms.
+InteractiveReporterInteractions command list (end with ENTER):
+  c: Print more detailed information about current stage
+  i: Print more detailed information
+
+(1/4) Node import 2019-12-30 11:28:40.292+0000
+  Estimated number of nodes: 17.09 M
+  Estimated disk space usage: 3.54 GB
+  Estimated required memory usage: 1.21 GB
+
+(2/4) Relationship import 2019-12-30 11:31:07.056+0000
+  Estimated number of relationships: 16.78 M
+  Estimated disk space usage: 546.50 MB
+  Estimated required memory usage: 1.20 GB
+
+(3/4) Relationship linking 2019-12-30 11:32:13.237+0000
+  Estimated required memory usage: 1.18 GB
+
+(4/4) Post processing 2019-12-30 11:32:28.474+0000
+  Estimated required memory usage: 1020.01 MB
+
+IMPORT DONE in 3m 55s 680ms.
 Imported:
   17804375 nodes
   16854197 relationships
   76057647 properties
 Peak memory usage: 1.20 GB
+csvs loaded
